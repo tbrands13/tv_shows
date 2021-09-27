@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>TV Shows</title>
+</head>
+<body>
+    <div class="container">
+        <div class="top d-flex justify-content-between mt-4">
+            <a class="btn btn-lg btn-outline-primary" href="/dashboard">TV Shows</a>
+            <a class="btn btn-lg btn-outline-dark" href="/logout">Logout</a>
+        </div>
+        <div class="mid border border-dark border-5 mt-4">
+            <h2>{{ show.title }}</h2>
+            <h3>Network: {{ show.network }}</h3>
+            <h3>Release Date: {{ show.release_date }}</h3>
+            <h3>Description:
+                {{ show.description }}
+            </h3><br><br>
+        </div>
+    </div>
+</body>
+</html>
